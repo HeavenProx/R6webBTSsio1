@@ -1,0 +1,256 @@
+body{	
+    font-family:Arial;
+    max-width: 100%;
+    background: linear-gradient(
+        to right, #833ab4,
+        #fd1d1d, #fcb045); 
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+
+@keyframes animate-background {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/* Page d'accueil */
+
+/*video titre*/
+.showcase {
+    width: 100%;
+    height: 13%;
+    position: relative;
+}
+
+.showcase video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.title {
+    width: 100%;
+    height: 13%;
+    background-color: #000;
+    font-size: 100px;
+    color: #fff;
+    mix-blend-mode: multiply;
+    text-align: center;
+}
+/* ------------- */
+
+.jumbostyle{
+	background-color: #000000;
+    color:#086b29;
+}
+
+nav{
+    margin-top: -10px;
+	background-color:#534f4a;
+    border: solid black 2px;
+}
+
+nav a{
+	color:rgb(255, 255, 255);
+    padding: 20px;
+    text-shadow:black;
+}
+
+nav a:hover{
+	color:rgb(255, 217, 0);
+    background-color: brown;
+    border: 1px;
+    border-radius: 20px;;
+}
+
+#home{
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.jumbofooter{
+    margin-top:5px;
+    margin-bottom:0;
+    background-color:#99d6ff;
+    height: 7%;
+}
+
+.container{
+    max-width: 1500px;
+    padding-top: 20px;
+}
+
+.p1{
+    font-size: 1.2em;
+}
+
+/* loading animation */
+#scanner {
+    color: red;
+    margin-top: 9px;
+    margin-left: 1300px;
+    position: absolute;
+}
+
+#scanner h5:before{
+    content:"Loading...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 3px solid #17feff;
+    overflow: hidden;
+    color: #17feff;
+    animation: load 4s linear infinite;
+}
+
+@keyframes load {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    60%, 80%{
+        width: 100%;
+    }
+}
+/* Fin de la page d'accueil */
+
+/* Page sur les saisons*/
+ul > li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.065em;
+}
+
+#page3{
+    background-color: black;
+    color: rgb(185, 177, 177);
+}
+
+ul > li > ul > li:hover{
+    color:rgb(192, 4, 4);
+}
+
+.imgs{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.imgsais {
+    width: 24%;
+    height: 15%;
+    border: solid 2px black;
+    border-radius: 50%;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(253, 152, 0);
+}
+/* Fin de la page sur les saisons */
+
+/* détails saison */
+.opsais {
+    width: 240px;
+    height: 360px;
+    margin : 20px;
+}
+
+.marg {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    font-size: 1.15em;
+}
+
+.imgplan {
+    width: 480px;
+    height: 200px;
+    margin: 7px;
+}
+
+.imgnvmap {
+    width: 400px;
+    height: 175px;
+    margin: 7px;
+}
+
+/* Page sur les attaquants */
+.imgopat {
+    width: 144px;
+    height: 240px;
+    margin: 5px;
+}
+
+.txt {
+    position: relative;
+    text-align: center;
+    color: red;
+}
+
+.txtmid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 370%);
+    background-color: rgba(127,127,127, 2);
+}
+
+figure{
+    display:inline-block;
+}
+
+figcaption{
+    background-color: rgba(255, 255, 255,.4);
+    
+}
+
+/* détails attaquants */
+#imgsledge2 {
+    width: 27%;
+    height: 27%;
+    border: solid 1px black;
+    border-radius: 6%;
+    margin-left: 60px;
+    margin-right: 100px;
+}
+
+#imgsledge3 {
+    width: 30%;
+    height: 30%;
+    border: solid 1px black;
+    border-radius: 6%;
+    margin-left: 80px;
+    margin-right: 60px;
+}
+
+#pmid {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#gif {
+    width: 180px;
+    height: 165px;
+}
+
+/* formulaire */
+.form {
+    width: 340px;
+    margin: 50px auto;
+}
